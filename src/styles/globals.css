@@ -1,0 +1,59 @@
+/* --------------------------------------- Variables --------------------------------------- */
+:root {
+	/* Header height */
+	--header-height: 3rem;
+
+	/* Font sizes */
+	--big-font-size: 3.75rem;
+	--h1-font-size: 2.25rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1rem;
+	--small-font-size: 0.938rem;
+	--smaller-font-size: 0.813rem;
+}
+
+/* Font sizes for larger devices */
+@media screen and (min-width: 768px) {
+	:root {
+		--big-font-size: 4rem;
+		--h1-font-size: 3.75rem;
+		--h2-font-size: 2rem;
+		--h3-font-size: 1.5rem;
+		--normal-font-size: 1.25rem;
+		--small-font-size: 1rem;
+		--smaller-font-size: 0.938rem;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2b3e50;
+	color: #e9e9ea;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+}
