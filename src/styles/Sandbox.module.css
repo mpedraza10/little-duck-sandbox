@@ -31,6 +31,10 @@
 	cursor: pointer;
 }
 
+.compileBtn:hover {
+	background-color: hsl(194, 67%, 50%);
+}
+
 .compileBtn svg {
 	width: 25px;
 	height: 25px;
@@ -62,7 +66,7 @@
 @media screen and (min-width: 768px) {
 	.content {
 		flex-direction: row;
-        justify-content: space-between;
+		justify-content: space-between;
 		gap: 2rem;
 	}
 

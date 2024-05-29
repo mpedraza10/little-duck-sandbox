@@ -23,7 +23,7 @@ end`
 
 	const handleCompile = async () => {
 		// Clear the result
-		setResult("");
+		setResult("Loading...");
 
 		try {
 			const response = await axios.post(`${api}/compile`, {
