@@ -1,8 +1,9 @@
 "use client";
 
 // Next imports
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // React imports
 import { useState, useEffect } from "react";
@@ -24,12 +25,12 @@ import styles from "@/styles/Header.module.css";
 */
 
 const Header = () => {
+	// Get pathname
+	const pathname = usePathname();
+
 	// States
 	const [menuOpened, setMenuOpened] = useState(false);
 	const [isMobile, setIsMobile] = useState(false);
-	const [activeSection, setActiveSection] = useState("Inicio");
-	const [scrolled, setScrolled] = useState(false);
-	const [isFirstLoad, setIsFirstLoad] = useState(true);
 
 	const toggleMenu = () => isMobile && setMenuOpened(!menuOpened);
 
@@ -70,9 +71,9 @@ const Header = () => {
 							<li onClick={toggleMenu} key={index}>
 								<Link
 									href={item.url}
-									target="_blank"
+									target={`${item.url[0] === "/" ? "" : "_blank"}`}
 									className={`${
-										activeSection === item.name ? styles.activeLink : ""
+										pathname === item.url ? styles.activeLink : ""
 									}`}
 								>
 									{item.name}

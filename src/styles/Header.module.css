@@ -1,12 +1,11 @@
 .header {
-	height: var(--header-height);
+	height: calc(var(--header-height) + 1rem);
 	position: fixed;
 	z-index: 10;
 	width: 100%;
 	top: 0;
 	left: 0;
 	background-color: #4e5d6c;
-	padding: 1rem;
 }
 
 .headerContent {
@@ -17,6 +16,7 @@
 	height: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 .logoCont {
@@ -24,7 +24,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 0.4rem;
-    width: 50%;
+	width: 50%;
 }
 
 .logoTitle {
@@ -38,7 +38,7 @@
 	position: absolute;
 	top: var(--header-height);
 	left: 0;
-	background-color: #f5f5f5;
+	background-color: #4e5d6c;
 	width: 100%;
 	height: calc(100vh - var(--header-height));
 }
@@ -71,7 +71,7 @@
 
 .menu li a:hover,
 .menu li a.activeLink {
-	color: var(--light-blue-color);
+	text-decoration: underline;
 }
 
 .hamburgerMenu {
@@ -83,13 +83,12 @@
 .bar {
 	width: 25px;
 	height: 3px;
-	background-color: var(--light-blue-color);
+	background-color: #f5f5f5;
 	margin: 4px 0;
 	transition: 0.4s;
 }
 
 .bar.change {
-	background-color: var(--light-blue-color);
 	transform: rotate(-45deg) translate(-5px, 6px);
 }
 
@@ -102,10 +101,6 @@
 }
 
 @media screen and (min-width: 768px) {
-	.header {
-		padding: 0 2rem;
-	}
-
 	.hamburgerMenu {
 		display: none;
 	}

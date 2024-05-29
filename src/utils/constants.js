@@ -1,7 +1,7 @@
 export const navItems = [
 	{
 		name: "Docs",
-		url: "",
+		url: "/docs",
 	},
 	{
 		name: "Github",
