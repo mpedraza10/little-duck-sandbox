@@ -7,7 +7,7 @@ const Footer = () => {
 		<footer className={styles.footer}>
 			<span className={styles.copy}>
 				© {new Date().getFullYear()} Miguel Pedraza |{" "}
-				<Link href="https://miguelped.com/">Portfolio</Link>
+				<Link href="https://miguelped.com/" target="_blank">Portfolio</Link>
 			</span>
 		</footer>
 	);
