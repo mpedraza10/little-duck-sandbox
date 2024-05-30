@@ -5,7 +5,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: #4e5d6c;
+	background-color: #86A5D9;
 }
 
 .headerContent {
@@ -38,7 +38,7 @@
 	position: absolute;
 	top: var(--header-height);
 	left: 0;
-	background-color: #4e5d6c;
+	background-color: #86A5D9;
 	width: 100%;
 	height: calc(100vh - var(--header-height));
 }

@@ -1,7 +1,7 @@
 "use client";
 
 // Next imports
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,15 +14,8 @@ import { navItems } from "@/utils/constants";
 // Styles
 import styles from "@/styles/Header.module.css";
 
-/*
-<Image
-    src=""
-    alt="Logo"
-    width={50}
-    height={50}
-    priority={true}
-/>
-*/
+// Images
+import logo from "../../public/images/logo.png";
 
 const Header = () => {
 	// Get pathname
@@ -63,6 +56,7 @@ const Header = () => {
 					}}
 					className={styles.logoCont}
 				>
+					<Image src={logo} alt="Logo" width={50} height={50} priority={true} />
 					<span className={styles.logoTitle}>Little Duck Sandbox</span>
 				</Link>
 				<nav className={`${styles.menu} ${menuOpened ? styles.show : ""}`}>

@@ -26,13 +26,13 @@
 .compileBtn {
 	width: 3rem;
 	padding: 0.4rem 0;
-	background-color: #5ac0de;
+	background-color: #0FE6E6;
 	border: none;
 	cursor: pointer;
 }
 
 .compileBtn:hover {
-	background-color: hsl(194, 67%, 50%);
+	background-color: hsl(180, 88%, 38%);
 }
 
 .compileBtn svg {
