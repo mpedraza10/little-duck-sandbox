@@ -56,7 +56,7 @@ const Header = () => {
 					}}
 					className={styles.logoCont}
 				>
-					<Image src={logo} alt="Logo" width={50} height={50} priority={true} />
+					<Image src={logo} alt="Logo" width={55} height={55} priority={true} />
 					<span className={styles.logoTitle}>Little Duck Sandbox</span>
 				</Link>
 				<nav className={`${styles.menu} ${menuOpened ? styles.show : ""}`}>

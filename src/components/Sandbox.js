@@ -58,7 +58,7 @@ end`
 				</button>
 			</div>
 			<div className={styles.output}>
-				<h3>Output:</h3>
+				<h3>Output Window:</h3>
 				<pre className={styles.pre}>{result}</pre>
 			</div>
 		</section>
